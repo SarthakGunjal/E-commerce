@@ -1,10 +1,23 @@
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
+
 import './MidItem.css';
+// import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+
+
+
+
+
 
 
 const BasicExample = ({key,title,description,img}) => {
+
+  const navigate = useNavigate();
+
+
+  
+
   return (
+    
     
      <div className="card" key={key}>
           <img src={img} alt={description} />
@@ -12,7 +25,8 @@ const BasicExample = ({key,title,description,img}) => {
           <div className="card-body">
             <p className="card-text">{description}</p>
             <div style={{textAlign:"center"}}>
-              <button className="btn btn-primary" >View</button>
+              <button className="btn btn-primary" onClick={() => navigate('/' + title)} >View</button>
+              
             </div>
             
           </div>

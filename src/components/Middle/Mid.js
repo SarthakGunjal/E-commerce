@@ -1,6 +1,7 @@
 import React from "react";
 import Miditem from "./miditem";
 
+
 const items = [
   {
     id: 1,
@@ -40,6 +41,7 @@ const items = [
   },
 ];
 
+
 const Mid = () => {
   return (
     <>
@@ -52,65 +54,3 @@ const Mid = () => {
 
 export default Mid;
 
-
-// import React from "react";
-// import itemshow from "./itemshow"
-
-
-//    const items=[
-//        { 
-//         id: 1, 
-//         title: "Mobile",
-//         discription: "This is a mobile"
-//     },
-//        { 
-//         id: 2, 
-//         title: "Laptop",
-//         discription: "This is a mobile"
-//     },
-//        { 
-//         id: 4, 
-//         title: "Fashion",
-//         discription: "This is a mobile"
-//     },
-//        { 
-//         id: 5, 
-//         title: "Children",
-//         discription: "This is a mobile"
-//     },
-//        { 
-//         id: 6, 
-//         title: "women",
-//         discription: "This is a mobile"
-//     },
-//        { 
-//         id: 7, 
-//         title: "men",
-//         discription: "This is a mobile"
-//     }
-
-// ];
-
-
-// const mid = () => {
-
- 
-
-//   return (
-//     <>
-//       {
-//           items.map((item) => (
-//           <itemshow  id={item.id}
-//           text={item.title}
-//           date={item.discription}/>
-//       ))
-//       }
-//     </>
-//   )
-// }
-
-
- 
-
-
-// export default mid

@@ -1,7 +1,11 @@
 import React from 'react';
 import './Nav.css'; // Import the CSS file for styling
+import { useNavigate } from 'react-router-dom';
+
 
 function Navbar() {
+    const navigate = useNavigate();
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">My App</div>
@@ -11,16 +15,16 @@ function Navbar() {
       </form>
       <ul className="nav">
         <li className="nav-item">
-          <a className="nav-link" href="#">Home</a>
+          <a className="nav-link" onClick={()=>navigate('/Home')}>Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About</a>
+          <a className="nav-link" onClick={()=>navigate('/About')}>About</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Cart</a>
+          <a className="nav-link" onClick={()=>navigate('/Cart')}>Cart</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Login</a>
+          <a className="nav-link" onClick={()=>navigate('/Login')}>Login</a>
         </li>
       </ul>
     </nav>
